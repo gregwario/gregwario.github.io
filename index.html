@@ -1,1 +1,228 @@
-hello world
+
+<html lang="en">
+<head>
+<meta name="charset" value="utf-8" />
+<meta name="viewport" content="width=320,initial-scale=1.0,user-scalable=no">
+<title>Greg Doolittle</title>
+<style>
+
+/* 
+
++      ___           ___           ___           ___           ___           ___           ___                       ___     
++     /\__\         /\  \         /\__\         /\__\         /\  \         /\  \         /\  \                     /\  \    
++    /:/ _/_       /::\  \       /:/ _/_       /:/ _/_       _\:\  \       /::\  \       /::\  \       ___         /::\  \   
++   /:/ /\  \     /:/\:\__\     /:/ /\__\     /:/ /\  \     /\ \:\  \     /:/\:\  \     /:/\:\__\     /\__\       /:/\:\  \  
++  /:/ /::\  \   /:/ /:/  /    /:/ /:/ _/_   /:/ /::\  \   _\:\ \:\  \   /:/ /::\  \   /:/ /:/  /    /:/__/      /:/  \:\  \ 
++ /:/__\/\:\__\ /:/_/:/__/___ /:/_/:/ /\__\ /:/__\/\:\__\ /\ \:\ \:\__\ /:/_/:/\:\__\ /:/_/:/__/___ /::\  \     /:/__/ \:\__\
++ \:\  \ /:/  / \:\/:::::/  / \:\/:/ /:/  / \:\  \ /:/  / \:\ \:\/:/  / \:\/:/  \/__/ \:\/:::::/  / \/\:\  \__  \:\  \ /:/  /
++  \:\  /:/  /   \::/~~/~~~~   \::/_/:/  /   \:\  /:/  /   \:\ \::/  /   \::/__/       \::/~~/~~~~   ~~\:\/\__\  \:\  /:/  / 
++   \:\/:/  /     \:\~~\        \:\/:/  /     \:\/:/  /     \:\/:/  /     \:\  \        \:\~~\          \::/  /   \:\/:/  /  
++    \::/  /       \:\__\        \::/  /       \::/  /       \::/  /       \:\__\        \:\__\         /:/  /     \::/  /   
++     \/__/         \/__/         \/__/         \/__/         \/__/         \/__/         \/__/         \/__/       \/__/    
+
+*/
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* business card */
+/* fonts from here: http://www.fontsquirrel.com/fonts/lato */
+@font-face {
+  font-family: 'Lato';
+  src: local("Myriad Set Pro"), local("Myriad Set"), local("Myriad Pro"), local("Myriad"), url(/fonts/Lato-Reg.ttf);
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: bold;
+  src: local("Myriad Set Pro"), local("Myriad Set"), local("Myriad Pro"), local("Myriad"), url(/fonts/Lato-Bol.ttf);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Lato', Sans-serif;
+/*  background: rgb(176,176,176);*/
+
+  background-color:#aaa;
+  background:-webkit-gradient(linear, 0 100%, 0 0, from(#888), to(#ccc));
+  
+color: #aaa;
+}
+
+#apple {
+  float:left;
+  padding: 7rem 10rem 8rem 8rem;
+  font-size: 8rem;
+  font-family: sans-serif;
+  color: rgb(182,59,170) /* #B6EBFF; */
+}
+#container {
+  transform: rotate(2deg);
+  -webkit-transform:rotate(2deg);
+  position: absolute;
+  margin-top: -12.5rem;
+  left: 50%;
+  top: 50%;
+  margin-left: -25rem;
+  width: 50rem;
+  background: #fff;
+/*  border-radius: 1rem;*/
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  padding: 2rem;
+}
+h1, h2, p#email a {
+  font-size: 1.4rem;
+}
+h1 {
+  color: #000;
+  margin-top: 3rem;
+font-weight: bold;
+}
+h2 {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  color:#afafaf;
+}
+p {
+  margin: 20px 0;
+} 
+p a, ul li a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  font-size: 1rem;
+  color:#afafaf;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color:#aab;
+}
+ul {
+  margin: 2rem 0;
+
+}
+ul li {
+  margin-left: 2rem;
+  margin-bottom: .5rem;
+}
+
+@media only screen and (max-device-width: 480px) {
+  html {
+    font-size: 100%;
+    background: #fff;
+  }
+  body {
+    width: 480px;
+  }
+  #apple {
+    float:none;
+    padding: 0;
+    margin-top: 8rem;
+  }
+  #container {
+    -webkit-transform: rotate(0);
+    margin-top: 0;
+    left: 0;
+    top: 0;
+    margin-left: 0;
+    padding: 3rem 0 0;
+    width: 100%;
+    text-align:center;
+    box-shadow: none;
+    overflow:hidden;
+  }
+  ul li {
+    margin-left: 0;
+  } 
+}
+
+/*
+@media only screen and (orientation:portrait) {
+  html {
+    font-size: 100%;
+  }
+
+  #container {
+    background:#F00; 
+  }
+}
+@media only screen and (orientation:landscape) {
+  html {
+    font-size: 30%;
+  }
+  #container {
+    background:#00F; 
+  }
+}*/
+
+</style>
+</head>
+<body>
+
+<div id="container">
+<span id="apple">&#xf8ff;</span>
+<h1>Greg Doolittle</h1>
+<h2>Web UI Engineer </h2>
+<ul aria-label="Find me across the web:">
+<li><a href="https://www.facebook.com/greg.doolittle" target="_blank">Facebook</a></li>
+<li><a href="https://twitter.com/gregwario" target="_blank">Twitter</a></li>
+<li><a href="https://instagram.com/gregwario/" target="_blank">Instagram</a></li>
+<li><a href="https://github.com/gregwario" target="_blank">GitHub</a></li>
+<li><a href="https://www.linkedin.com/in/gregdoolittle" target="_blank">LinkedIn</a></li>
+<ul>
+<p id="email" aria-label="Email me at"><a href="mailto:gdoolittle@gmail.com">gdoolittle@gmail.com</a></p>
+</div>
+
+</body>
+</html><script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "//np.lexity.com/embed/YW/b6edf42c82c42ab1bb33c3a69a74fd7a?id=f8d289dc8ed6";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>
