@@ -1,4 +1,4 @@
-
+<doctype html>
 <html lang="en">
 <head>
 <meta name="charset" value="utf-8" />
@@ -6,6 +6,7 @@
 <title>Greg Doolittle</title>
 <style>
 
+<!--
 /* 
 
 +      ___           ___           ___           ___           ___           ___           ___                       ___     
@@ -21,7 +22,7 @@
 +     \/__/         \/__/         \/__/         \/__/         \/__/         \/__/         \/__/         \/__/       \/__/    
 
 */
-
+-->
 
 
 
@@ -205,6 +206,30 @@ ul li {
     background:#00F; 
   }
 }*/
+
+#apple {
+  position: relative;
+}
+
+#apple::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  content: '';
+  box-shadow: inset 0 2px #FFF;
+  background: -50px center no-repeat;
+  background-image: linear-gradient(125deg,rgba(255,255,255,0) 30%,#FFF 30%,#FFF 50%,rgba(255,255,255,0) 50%);
+  background-clip: padding-box;
+  opacity: .3;
+  transition: background-position .4s;
+}
+
+#apple:hover:after {
+  background-position: 100px center;
+}
+
 
 </style>
 </head>
